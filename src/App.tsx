@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <Wrapper className='App'>
+    <Wrapper className='App' data-testid='App'>
       <IntuitNav />
       <Footer />
     </Wrapper>
