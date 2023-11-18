@@ -1,3 +1,3 @@
-import IntuitNav from './IntuitNav';
+import IntuitNav from "./IntuitNav";
 
 export default IntuitNav;

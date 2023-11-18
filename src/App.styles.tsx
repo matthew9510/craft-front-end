@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   max-width: 100vw;
@@ -6,4 +6,4 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-`
+`;
