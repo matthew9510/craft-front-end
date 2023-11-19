@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         </a>
       </p>
       <p>
-        Click here to learn more about Matthew's prior work experience with
+        Click here to learn more about Matthew&apos;s prior work experience with
         Intuit
       </p>
     </Foot>

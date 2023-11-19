@@ -3,7 +3,7 @@ import {Wrapper} from "./App.styles";
 import IntuitNav from "./Components/IntuitNav/IntuitNav";
 import Footer from "./Components/Footer/Footer";
 
-function App() {
+function App(): JSX.Element {
   return (
     <Wrapper className="App" data-testid="App">
       <IntuitNav />
