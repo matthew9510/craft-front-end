@@ -16,5 +16,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", ".eslintrc.js", "jest.config.js"]
+  "include": ["src", ".eslintrc.js", "jest.config.js", "commitlint.config.js"]
 }
