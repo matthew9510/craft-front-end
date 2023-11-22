@@ -3,6 +3,7 @@ import config from "../../config";
 
 export const Foot = styled.div`
   background-color: ${config.colors.primary};
+  color: ${config.colors.tertiary};
   width: 100vw;
   display: flex;
   flex-direction: column;

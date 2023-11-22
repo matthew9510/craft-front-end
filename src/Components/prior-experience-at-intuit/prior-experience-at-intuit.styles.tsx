@@ -69,8 +69,8 @@ export const PriorExperiencePoint = styled.li`
     content: "•"; /* Add custom bullet point */
     position: absolute;
     left: -0.6em; /* Position bullet point in front of text */
-    color: grey; /* Change color of bullet point */
-    font-size: 1.7em; /* Increase size of bullet point */
+    color: {config.colors.secondary}; 
+    font-size: 1.7em;
     top: -0.3em; /* Align bullet point with text */
   }
 

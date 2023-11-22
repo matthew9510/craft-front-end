@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <Foot data-testid="Footer">
       <p>
-        Made with React and Styled-Components 🪄 by{" "}
+        Made with React and 🪄 Styled-Components by{" "}
         <a href="https://matthewhess.io/" target="__blank">
           Matthew Hess
         </a>
