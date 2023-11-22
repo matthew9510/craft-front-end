@@ -1,5 +1,10 @@
 import React from "react";
-import {Header, NavBar, NavBarImage, NavBarMintImage} from "./IntuitNav.styles";
+import {
+  Header,
+  NavBar,
+  NavBarImage,
+  NavBarMintImage,
+} from "./intuit-nav.styles";
 import config from "../../config";
 
 const IntuitNav: React.FC = () => {
