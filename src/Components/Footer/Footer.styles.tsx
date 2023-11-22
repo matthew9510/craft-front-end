@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import config from "../../config";
 
 export const Foot = styled.div`
-  background-color: rgb(53, 100, 251);
+  background-color: ${config.colors.primary};
   width: 100vw;
   display: flex;
   flex-direction: column;
