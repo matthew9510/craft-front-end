@@ -9,46 +9,50 @@ export const PriorExperienceWrapper = styled.div`
 `;
 
 export const PriorExperienceHeading = styled.h2`
-  font-size: clamp(10px, 3vw, 55px);
+  font-size: 3.2rem;
   margin-bottom: 0.75%;
 
+  @media (max-width: 1201px) {
+    font-size: 2.7rem;
+    margin-bottom: 1.5%;
+  }
+  @media (max-width: 1025px) {
+    font-size: 2rem;
+    margin-bottom: 1.5%;
+  }
+
   @media (max-width: 768px) {
-    font-size: clamp(10px, 3.5vw, 25px);
+    font-size: 1rem;
     margin-bottom: 1.5%;
   }
 
   @media (max-width: 414px) {
-    font-size: clamp(10px, 4vw, 20px);
+    font-size: 0.7rem;
     margin-bottom: 5%;
   }
 `;
-
 export const IntuitLogoAsImage = styled.img`
   width: auto;
-  height: clamp(
-    8px,
-    2.5vw,
-    50px
-  ); /* Even smaller than the font-size of the heading */
+  height: 2.5rem;
   margin-left: 0.25vw;
   margin-right: 0.45vw;
 
+  @media (max-width: 1201px) {
+    height: 2rem;
+  }
+
+  @media (max-width: 1025px) {
+    height: 1.6rem;
+  }
+
   @media (max-width: 768px) {
-    height: clamp(
-      8px,
-      2.8vw,
-      20px
-    ); /* Even smaller than the font-size of the heading */
+    height: 0.8rem;
     margin-left: 0.25vw;
     margin-right: 1vw;
   }
 
   @media (max-width: 414px) {
-    height: clamp(
-      8px,
-      3.2vw,
-      16px
-    ); /* Even smaller than the font-size of the heading */
+    height: 0.6rem;
   }
 `;
 
@@ -59,9 +63,9 @@ export const PriorExperienceUl = styled.ul`
 
 export const PriorExperiencePoint = styled.li`
   font-weight: 350;
-  font-size: clamp(10px, 2vw, 55px);
+  font-size: 2.5rem;
   color: grey;
-  margin-bottom: 1%;
+  margin-bottom: 1.4%;
   list-style-type: none; /* Remove default bullet point */
   position: relative; /* Allow absolute positioning of children */
 
@@ -73,14 +77,19 @@ export const PriorExperiencePoint = styled.li`
     font-size: 1.7em;
     top: -0.3em; /* Align bullet point with text */
   }
+  
+  @media (max-width: 1025px) {
+    font-size: 2rem;
+    margin-bottom: 1.5%;
+  }
 
   @media (max-width: 768px) {
-    font-size: clamp(10px, 3vw, 20px);
+    font-size: 1.1rem;
     margin-bottom: 3%;
   }
 
   @media (max-width: 414px) {
-    font-size: clamp(10px, 4vw, 20px);
+    font-size: 0.7rem;
     margin-bottom: 5%;
   }
 `;

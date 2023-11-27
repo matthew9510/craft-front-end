@@ -16,12 +16,29 @@ export const NavBar = styled.div`
 `;
 
 export const NavBarImage = styled.img`
-  max-width: 10%;
+  max-width: 16%;
   height: auto;
   margin-right: 1%; /* Add some spacing between the images */
+  @media (max-width: 768px) {
+    max-width: 16%;
+  }
 `;
-export const NavBarMintImage = styled.img`
-  max-width: 5%;
+export const NavBarTurboImage = styled.img`
+  max-width: 12%;
   height: auto;
   margin-right: 1%; /* Add some spacing between the images */
+
+  @media (max-width: 768px) {
+    max-width: 12%;
+  }
+`;
+
+export const NavBarMintImage = styled.img`
+  max-width: 8%;
+  height: auto;
+  margin-right: 1%; /* Add some spacing between the images */
+
+  @media (max-width: 768px) {
+    max-width: 8%;
+  }
 `;

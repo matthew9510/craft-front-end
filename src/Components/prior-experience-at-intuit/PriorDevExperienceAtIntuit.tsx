@@ -85,9 +85,8 @@ export const PriorDevExperienceAtIntuit: React.FC = () => {
   return (
     <PriorExperienceWrapper>
       <PriorExperienceHeading>
-        Prior{" "}
-        <IntuitLogoAsImage src={config.IntuitLogoAsSVG} alt="Intuit Logo" />
-        Contract Accomplishments:
+        Prior Accomplishments Contracting For{" "}
+        <IntuitLogoAsImage src={config.IntuitLogoAsSVG} alt="Intuit Logo" />:
       </PriorExperienceHeading>
       <PriorExperienceUl>
         {experience.map((point, index) => {
