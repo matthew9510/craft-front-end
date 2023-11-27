@@ -9,12 +9,18 @@ export const Foot = styled.div`
   align-items: center;
   line-height: 7px;
   font-size: clamp(10px, 2vw, 55px);
+  padding: -2%;
 
   @media (max-width: 768px) {
-    font-size: clamp(10px, 3vw, 20px);
+    font-size: clamp(10px, 2.7vw, 20px);
   }
 
   @media (max-width: 414px) {
-    font-size: clamp(10px, 4vw, 20px);
+    font-size: clamp(10px, 2.5vw, 20px);
+  }
+  @media (max-width: 375px) {
+    font-size: clamp(10px, 2vw, 20px);
+    line-height: 1.5; // adjust line height to make it easier to read on mobile
+    text-align: center; // center text on mobile since the footer contains a lot of text
   }
 `;
