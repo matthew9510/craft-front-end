@@ -1,5 +1,6 @@
 import React from "react";
 import {Foot} from "./footer.styles";
+import {Link} from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -11,8 +12,10 @@ const Footer: React.FC = () => {
         </a>
       </p>
       <p>
-        Click here to learn more about Matthew&apos;s prior work experience with
-        Intuit
+        <Link to="/prior-experience">
+          Click here to learn more about Matthew&apos;s prior work experience
+          with Intuit
+        </Link>
       </p>
     </Foot>
   );
