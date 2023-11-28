@@ -4,6 +4,7 @@ import React from "react";
 import {Wrapper, Greeting, RouterWrapper, StyledLink} from "./App.styles";
 import IntuitNav from "./components/intuit-nav";
 import Footer from "./components/footer";
+import InterviewSpace from "./components/interview-space";
 import PriorDevExperienceAtIntuit from "./components/prior-experience-at-intuit";
 import {Route, Routes, Outlet} from "react-router-dom";
 function App(): JSX.Element {
@@ -21,7 +22,7 @@ function App(): JSX.Element {
             path="/prior-experience"
             element={<PriorDevExperienceAtIntuit />}
           />
-          <Route path="/" element={<PriorDevExperienceAtIntuit />} />
+          <Route path="/" element={<InterviewSpace />} />
         </Routes>
         <Outlet />
       </RouterWrapper>
