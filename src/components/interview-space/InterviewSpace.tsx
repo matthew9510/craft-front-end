@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherForm from "../weather-form/WeatherForm";
 
 interface WeatherData {
   weatherDescription: string;
@@ -58,5 +59,27 @@ export default function InterviewSpace(): JSX.Element {
   // 1 day forcast
   // Table of 10 day forecast
 
-  return <div>InterviewSpace</div>;
+  const [city, setCity] = React.useState("");
+  const [imperial, setImperial] = React.useState(false);
+
+  const handleSetCity = (city: string): void => {
+    setCity(city);
+  };
+
+  const handleSetImperial = (imperial: boolean): void => {
+    setImperial(!imperial);
+  };
+
+  React.useEffect(() => {
+    console.log("city", city);
+    console.log("imperial", imperial);
+    console.log("weatherData", weatherData);
+  }, [city, imperial]);
+
+  return (
+    <div>
+      <WeatherForm setCity={handleSetCity} setImperial={handleSetImperial} />
+      {/* // pass data to card */}
+    </div>
+  );
 }
