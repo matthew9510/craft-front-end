@@ -1,7 +1,7 @@
 import React from "react";
 import {Wrapper} from "./App.styles";
-import IntuitNav from "./Components/IntuitNav/IntuitNav";
-import Footer from "./Components/Footer/Footer";
+import IntuitNav from "./components/intuit-nav/IntuitNav";
+import Footer from "./components/footer/Footer";
 
 function App(): JSX.Element {
   return (

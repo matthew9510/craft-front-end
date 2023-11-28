@@ -31,4 +31,5 @@ module.exports = {
       version: "17",
     },
   },
+  ignorePatterns: ["build/"],
 };
