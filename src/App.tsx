@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+// import IntuitNav from "./components/intuit-nav/IntuitNav";
+// import Footer from "./components/footer/Footer";
+import {Wrapper, Greeting, RouterWrapper, StyledLink} from "./App.styles";
+import IntuitNav from "./components/intuit-nav";
+import Footer from "./components/footer";
+import PriorDevExperienceAtIntuit from "./components/prior-experience-at-intuit";
+import {Route, Routes, Outlet} from "react-router-dom";
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper className="App" data-testid="App">
+      <StyledLink to="/">
+        <IntuitNav />
+        <Greeting>
+          Hello again Intuit, it&apos;s a pleasure to be back!
+        </Greeting>
+      </StyledLink>
+      <RouterWrapper>
+        <Routes>
+          <Route
+            path="/prior-experience"
+            element={<PriorDevExperienceAtIntuit />}
+          />
+          <Route path="/" element={<PriorDevExperienceAtIntuit />} />
+        </Routes>
+        <Outlet />
+      </RouterWrapper>
+      <Footer />
+    </Wrapper>
   );
 }
 
