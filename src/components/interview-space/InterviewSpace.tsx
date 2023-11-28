@@ -1,7 +1,8 @@
 import React from "react";
 import WeatherForm from "../weather-form/WeatherForm";
+import WeatherCard from "../weather-card/WeatherCard";
 
-interface WeatherData {
+export interface WeatherData {
   weatherDescription: string;
   temperature: number;
   date: string;
@@ -12,7 +13,7 @@ const weatherData: WeatherData[] = [
   {
     date: "2023-11-28",
     temperature: 20,
-    weatherDescription: "Sunny",
+    weatherDescription: "Sunny 🌞",
     city: "San Diego",
   },
   {
@@ -55,20 +56,13 @@ const weatherData: WeatherData[] = [
 
 export default function InterviewSpace(): JSX.Element {
   // - [x] data
-  // form for city and zip
+  // - [x] form for city and zip
   // 1 day forcast
   // Table of 10 day forecast
 
   const [city, setCity] = React.useState("");
   const [imperial, setImperial] = React.useState(false);
-
-  const handleSetCity = (city: string): void => {
-    setCity(city);
-  };
-
-  const handleSetImperial = (imperial: boolean): void => {
-    setImperial(!imperial);
-  };
+  //   const filteredWEatherData = weatherData.filter()
 
   React.useEffect(() => {
     console.log("city", city);
@@ -78,8 +72,9 @@ export default function InterviewSpace(): JSX.Element {
 
   return (
     <div>
-      <WeatherForm setCity={handleSetCity} setImperial={handleSetImperial} />
-      {/* // pass data to card */}
+      <WeatherForm setCity={setCity} setImperial={setImperial} />
+      <WeatherCard weatherData={weatherData[0]} imperial={imperial} />
+      {/* 10 day forcast based on city selected  */}
     </div>
   );
 }

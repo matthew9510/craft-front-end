@@ -2,8 +2,8 @@ import React from "react";
 import {FormWrapper} from "./weather-form.styles";
 
 export default function WeatherForm(props: {
-  setCity: (city: string) => void;
-  setImperial: (imperial: boolean) => void;
+  setCity: React.Dispatch<React.SetStateAction<string>>;
+  setImperial: React.Dispatch<React.SetStateAction<boolean>>;
 }): JSX.Element {
   return (
     <FormWrapper>
@@ -23,9 +23,8 @@ export default function WeatherForm(props: {
         <input
           type="checkbox"
           id="imperial"
-          name="imperial"
           onChange={e => {
-            props.setImperial(Boolean(e.target.value));
+            props.setImperial(previous => !previous);
           }}
         />
       </form>
