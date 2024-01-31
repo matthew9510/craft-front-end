@@ -52,12 +52,12 @@ const weatherData: WeatherData[] = [
     weatherDescription: "Rainy",
     city: "San Francisco",
   },
-];
+]; // rather than a list containing multiple cities, we could construct a hash map of cities to weather data
 
 export default function InterviewSpace(): JSX.Element {
   // - [x] data
   // - [x] form for city and zip
-  // 1 day forcast
+  // - [x] 1 day forcast
   // Table of 10 day forecast
 
   const [city, setCity] = React.useState("");

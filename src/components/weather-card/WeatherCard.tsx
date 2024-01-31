@@ -7,7 +7,7 @@ export default function WeatherCard(props: {
   imperial: boolean;
 }): JSX.Element {
   return (
-    <CardWrapper>
+    <CardWrapper data-testid="weather-card">
       <h3>Today&apos;s Weather</h3>
       <p>{props.weatherData.date}</p>
       <p>{props.weatherData.city}</p>
