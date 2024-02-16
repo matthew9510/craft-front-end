@@ -4,18 +4,16 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.1.2](https://github.com/matthew9510/craft-front-end/compare/v0.1.1...v0.1.2) (2024-01-31)
 
-
 ### 🐛 Bug Fixes
 
-* weather form prop types ([4c9b8d8](https://github.com/matthew9510/craft-front-end/commit/4c9b8d81ded314428efa2c80b17cea8a6d3d137b))
-
+- weather form prop types ([4c9b8d8](https://github.com/matthew9510/craft-front-end/commit/4c9b8d81ded314428efa2c80b17cea8a6d3d137b))
 
 ### ✨ Features
 
-* comment out prior interview alterations ([ee4dbd6](https://github.com/matthew9510/craft-front-end/commit/ee4dbd6d16d9aed5077cb3e71403839587a55527))
-* interview space created with weather data ([0a25a17](https://github.com/matthew9510/craft-front-end/commit/0a25a17fa707ac4a40679a1d88aed8a2a1601deb))
-* prior interview adjustments ([69b9c42](https://github.com/matthew9510/craft-front-end/commit/69b9c42c31fc425666a22a11e5f495f5101ca335))
-* weather form created ([bd9e675](https://github.com/matthew9510/craft-front-end/commit/bd9e675030f0b8b02b66759cba4d8ce2218193d7))
+- comment out prior interview alterations ([ee4dbd6](https://github.com/matthew9510/craft-front-end/commit/ee4dbd6d16d9aed5077cb3e71403839587a55527))
+- interview space created with weather data ([0a25a17](https://github.com/matthew9510/craft-front-end/commit/0a25a17fa707ac4a40679a1d88aed8a2a1601deb))
+- prior interview adjustments ([69b9c42](https://github.com/matthew9510/craft-front-end/commit/69b9c42c31fc425666a22a11e5f495f5101ca335))
+- weather form created ([bd9e675](https://github.com/matthew9510/craft-front-end/commit/bd9e675030f0b8b02b66759cba4d8ce2218193d7))
 
 ### 0.1.1 (2023-11-28)
 

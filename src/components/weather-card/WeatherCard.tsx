@@ -1,5 +1,5 @@
 import React from "react";
-import type {WeatherData} from "../interview-space/InterviewSpace";
+import type {WeatherData} from "../weather-wrapper/WeatherWrapper";
 import {CardWrapper} from "./weather-card.styles";
 
 export default function WeatherCard(props: {

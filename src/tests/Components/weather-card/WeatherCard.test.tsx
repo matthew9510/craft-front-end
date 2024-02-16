@@ -2,7 +2,7 @@ import React from "react";
 import {render, screen} from "@testing-library/react";
 import "@testing-library/jest-dom";
 import WeatherCard from "../../../components/weather-card";
-import type {WeatherData} from "../../../components/interview-space/InterviewSpace";
+import type {WeatherData} from "../../../components/weather-wrapper/WeatherWrapper";
 
 const weatherData: WeatherData = {
   date: "2023-11-28",
