@@ -1,8 +1,12 @@
 import React from "react";
 import {Foot} from "./footer.styles";
-// import {Link} from "react-router-dom";
+import {useLocation, Link} from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const isOnHomeRoute = currentPath === "/";
+
   return (
     <Foot data-testid="Footer">
       <p>
@@ -11,12 +15,14 @@ const Footer: React.FC = () => {
           Matthew Hess
         </a>
       </p>
-      {/* <p>
-        <Link to="/prior-experience">
-          Click here to learn more about Matthew&apos;s prior work experience
-          with Intuit
-        </Link>
-      </p> */}
+      {!isOnHomeRoute && (
+        <p>
+          <Link to="/prior-experience">
+            Click here to learn more about Matthew&apos;s prior work experience
+            with Intuit
+          </Link>
+        </p>
+      )}
     </Foot>
   );
 };
